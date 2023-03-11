@@ -10,7 +10,7 @@ const initialState = {
   surname: '',
   date: '',
   phone: '',
-  email: '',
+  url: '',
   aboutMyself: '',
   technologies: '',
   projectDescription: '',
@@ -26,9 +26,8 @@ class Form extends React.Component {
   }
 
   handleChange(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+    const value = event.target.value;
+    const name = event.target.name;
 
     this.setState({
       [name]: value,
@@ -41,6 +40,7 @@ class Form extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state);
+    this.setState({ ...initialState });
   }
 
   render() {
@@ -77,8 +77,8 @@ class Form extends React.Component {
           );
         })}
         <div className={style.btns}>
-          <Button type="submit" text="Отправить" onClick={this.handleSubmit} />
-          <Button text="Отменить" type="button" onClick={this.reset} />
+          <Button type="submit" text="Отправить" />
+          <Button type="button" text="Отменить" onClick={this.reset} />
         </div>
       </form>
     );

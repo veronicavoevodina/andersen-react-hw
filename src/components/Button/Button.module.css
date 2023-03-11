@@ -12,3 +12,9 @@
   display: inline-block;
   margin: 0px 2rem;
 }
+.btn:hover {
+  background: var(--grey-700);
+}
+.btn:active {
+  background: var(--grey-800);
+}

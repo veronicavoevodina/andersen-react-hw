@@ -4,14 +4,14 @@ export const formData = [
     name: 'name',
     labelText: 'Имя',
     id: '1',
-    placeholder: 'пример: Василий',
+    placeholder: 'Василий',
   },
   {
     type: 'text',
     name: 'surname',
     labelText: 'Фамилия',
     id: '2',
-    placeholder: 'пример: Иванов',
+    placeholder: 'Иванов',
   },
   {
     type: 'date',
@@ -24,15 +24,15 @@ export const formData = [
     name: 'phone',
     labelText: 'Телефон',
     id: '4',
-    placeholder: 'пример: +375331234567',
+    placeholder: '+375331234567',
   },
 
   {
-    type: 'email',
-    name: 'email',
+    type: 'url',
+    name: 'url',
     labelText: 'Сайт',
     id: '5',
-    placeholder: 'пример: vasya@gmail.com',
+    placeholder: 'https://www.mywebsite.com',
   },
 ];
 
