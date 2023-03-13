@@ -1,6 +1,6 @@
 import React from 'react';
 import FormRow from './FormRow';
-import Button from '../Button/Button';
+import Button from '../Button';
 import { formData, textareaData } from './formData';
 import style from './Form.module.css';
 import Textarea from './Textarea';
